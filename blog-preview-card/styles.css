@@ -3,8 +3,11 @@
     --neutral-white: hsl(0, 0%, 100%);
     --neutral-grey: hsl(0, 0%, 50%);
     --neutral-black: hsl(0, 0%, 7%);
-    --body-s: 16px;
-    --title: 24px;
+    --title: 1.5rem;
+    --title-s: 1.25rem;
+    --body-m: 1rem;
+    --body-s: 0.875rem;
+    --body-xs: 0.75rem;
 }
 
 /* CSS reset from https://www.joshwcomeau.com/css/custom-css-reset/
@@ -62,6 +65,13 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: var(--body-m);
+    font-family: "Figtree", sans-serif;
+    color: var(--neutral-black);
+}
+
+.bold {
+    font-weight: 800;
 }
 
 .card {
@@ -71,4 +81,34 @@ body {
     border-radius: 20px;
     padding: 24px;
     box-shadow: 8px 8px 0px 0px var(--neutral-black);
+}
+
+.cover {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.label {
+    font-size: var(--body-xs);
+    background-color: var(--primary-yellow);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+time {
+    font-size: var(--body-xs);
+}
+
+h1 {
+    font-size: var(--title-s);
+}
+
+p {
+    font-size: var(--body-s);
+    color: var(--neutral-grey);
+}
+
+.author {
+    font-size: var(--body-s)
 }
