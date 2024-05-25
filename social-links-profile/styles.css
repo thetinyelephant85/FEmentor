@@ -96,13 +96,10 @@
     padding: 24px;
     background-color: var(--neutral-dark-grey);
     border-radius: 20px;
+    min-width: 328px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-  }
-
-  .details {
-    padding: 16px 0;
+    gap: 24px;
   }
 
   img {
@@ -130,8 +127,6 @@
 @media only screen and (min-width: 768px) {
     main {
         padding: 40px;
+        min-width: 376px;
       }
 }
-
-
-
