@@ -35,6 +35,8 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Outfit', sans-serif;
+    color: var(--neutral-dark-charcoal);
   }
   /*
     5. Improve media defaults
@@ -60,4 +62,20 @@
   */
   #root, #__next {
     isolation: isolate;
+  }
+
+  .accent {
+    color: var(--primary-nutmeg);
+  }
+
+  .serif {
+    font-family: 'Young Serif', serif;
+  }
+
+  .h1 {
+    font-size: var(--title);
+  }
+
+  .h2 {
+    font-size: var(--title-s);
   }
