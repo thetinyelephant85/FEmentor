@@ -77,15 +77,18 @@
   h1 {
     font-size: var(--title);
     line-height: 1.2;
+    margin-bottom: 1rem;
   }
 
   h2 {
     font-size: var(--title-s);
+    margin-bottom: 1rem;
   }
 
   h3 {
     color: var(--primary-dark-raspberry);
     font-weight: var(--w-semibold);
+    margin-bottom: 1rem;
   }
 
   hr {
@@ -99,7 +102,7 @@
   }
 
   section {
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
 
   .preparation {
@@ -107,5 +110,34 @@
     background-color: var(--neutral-rose-white);
     border-radius: 8px;
   }
+
+  .table-description {
+    padding-bottom: 1rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr {
+    border-bottom: 1px solid var(--neutral-light-grey);
+  }
+
+  tr:last-child {
+    border-bottom: none;
+  }
+
+  th { 
+    font-weight: normal;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  td { 
+    padding: 1rem;
+  }
+
+
 
   
