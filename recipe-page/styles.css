@@ -8,8 +8,8 @@
     --neutral-wenge-brown: hsl(30, 54%, 90%);
     --neutral-dark-charcoal: hsl(24, 5%, 18%);
     --title-l: 2.5rem;
-    --title: 2rem;
-    --title-s: 1.5rem;
+    --title: 2.25rem;
+    --title-s: 1.75rem;
     --body-m: 1.25rem;
     --w-semibold: 600;
     --w-bold: 700;  
@@ -38,6 +38,7 @@
     -webkit-font-smoothing: antialiased;
     font-family: 'Outfit', sans-serif;
     color: var(--neutral-dark-charcoal);
+    background-color: var(--neutral-wenge-brown);
   }
   /*
     5. Improve media defaults
@@ -97,7 +98,12 @@
     height: 1px;
   }
 
+
   main {
+    background-color: var(--neutral-white);
+  }
+
+  .content {
     padding: 2rem;
   }
 
@@ -109,6 +115,13 @@
     padding: 1rem;
     background-color: var(--neutral-rose-white);
     border-radius: 8px;
+  }
+
+  ul {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertically centered is not working */
+    align-items: flex-start;
   }
 
   .table-description {
@@ -136,6 +149,31 @@
 
   td { 
     padding: 1rem;
+  }
+
+  @media only screen and (min-width:768px){
+    
+    main {
+      margin: 120px auto;
+      max-width: 736px;
+      border-radius: 24px;
+    }
+
+    img {
+      padding: 2.5rem 2.5rem 0 2.5rem; /* border radius is not working due to padding. To review img size */
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+    
+    h1 {
+      font-size: var(--title-l);
+    }
+
+    .nutritions {
+      margin-bottom: 0;
+    }
   }
 
 
