@@ -10,6 +10,7 @@
     --title-l: 2.5rem;
     --title: 2.25rem;
     --title-s: 1.75rem;
+    --title-xs: 1.25rem;
     --body-m: 1.25rem;
     --w-semibold: 600;
     --w-bold: 700;  
@@ -86,8 +87,9 @@
     margin-bottom: 1rem;
   }
 
-  h3 {
+  .preparation h2 {
     color: var(--primary-dark-raspberry);
+    font-size: var(--title-xs);
     font-weight: var(--w-semibold);
     margin-bottom: 1rem;
   }
