@@ -117,11 +117,17 @@
     border-radius: 8px;
   }
 
-  ul {  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  /* vertically centered is not working */
-    align-items: flex-start;
+  li {
+    padding-bottom: 0.5rem;
+  }
+
+  li:last-child {
+    padding-bottom: 0;
+  }
+
+  li::marker {
+    color: var(--primary-nutmeg);
+    font-weight: bold;
   }
 
   .table-description {
