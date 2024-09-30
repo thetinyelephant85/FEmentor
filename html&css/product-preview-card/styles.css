@@ -5,12 +5,9 @@
     --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
     --neutral-dark-blue: hsl(212, 21%, 14%);
     --w-semibold: 500;
-    --w-bold: 700;    
+    --w-bold: 700;
+    font-size: 14px;  
 }
-
-
-
-
 
 /* CSS reset from https://www.joshwcomeau.com/css/custom-css-reset/
   
@@ -53,30 +50,6 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
-
-  a {
-    text-decoration: none;
-    color: var(--neutral-white);
-    font-weight: var(--w-bold);
-    display: block;
-    width: 100%;
-    padding: 12px 0;
-    background-color: var(--neutral-grey);
-    border-radius: 8px;
-  }
-
-  a:hover {
-    background-color: var(--primary-green);
-    color: var(--neutral-black);
-  }
-
-  ul {
-    padding: 0;
-  }
-
-  li {
-    list-style: none;
-  }
   /*
     8. Create a root stacking context
   */
@@ -84,13 +57,58 @@
     isolation: isolate;
   }
 
-  body {
-    font-size: 14px;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  }
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background-color: var(--primary-cread);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  h1 {
-    font-family: 'Fraunces', Times, serif;
-  }
+img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
 
-  
+.card {
+  background-color: var(--neutral-white);
+  border-radius: 16px;
+  max-width: 343px;
+}
+
+.content {
+  padding: 1.714rem;
+}
+
+.category {
+  text-transform: uppercase;
+  color: var(--neutral-dark-grayish-blue);
+  font-weight: var(--w-semibold);
+}
+
+h1 {
+  font-family: 'Fraunces', Times, serif;
+  line-height: 1;
+  color: var(--neutral-dark-blue);
+}
+
+p {
+  color: var(--neutral-dark-grayish-blue);
+}
+
+button {
+  background-color: var(--primary-cyan);
+  width: 100%;
+  color: var(--neutral-white);
+  font-weight: var(--w-bold);
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+button:hover {
+  background-color: var(--primary-cyan);
+}
+
