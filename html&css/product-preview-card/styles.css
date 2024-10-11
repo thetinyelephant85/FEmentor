@@ -1,5 +1,6 @@
 :root {
     --primary-cyan: hsl(158, 36%, 37%);
+    --primary-cyan-dark: hsl(156, 42%, 18%);
     --primary-cread: hsl(30, 38%, 92%);
     --neutral-white: hsl(0, 0%, 100%);
     --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
@@ -82,33 +83,80 @@ img {
   padding: 1.714rem;
 }
 
+.bold {
+  font-weight: var(--w-bold);
+}
+
+.serif {
+  font-family: 'Fraunces', Times, serif;
+}
+
+.discounted {
+  text-decoration: line-through;
+}
+
 .category {
   text-transform: uppercase;
   color: var(--neutral-dark-grayish-blue);
   font-weight: var(--w-semibold);
+  font-size: 0.857rem;
+  letter-spacing: 0.4em;
+  padding-bottom: 1rem;
 }
 
 h1 {
-  font-family: 'Fraunces', Times, serif;
+  font-size: 2.286rem;
   line-height: 1;
   color: var(--neutral-dark-blue);
+  padding-bottom: 1rem;
 }
 
 p {
   color: var(--neutral-dark-grayish-blue);
 }
 
-button {
+.description {
+  padding-bottom: 1rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.currentPrice {
+  font-size: 2.2rem;
+  color: var(--primary-cyan);
+}
+
+.icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   background-color: var(--primary-cyan);
   width: 100%;
   color: var(--neutral-white);
   font-weight: var(--w-bold);
   border: none;
   border-radius: 8px;
-  padding: 8px;
+  padding: 1rem 0.5rem;
 }
 
 button:hover {
-  background-color: var(--primary-cyan);
+  background-color: var(--primary-cyan-dark);
+  cursor: pointer;
 }
 
+
+@media only screen and (min-width: 768px){
+  .card {
+    display: flex;
+    max-width: 600px;
+  }
+
+
+  
+}
