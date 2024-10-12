@@ -69,12 +69,12 @@ body {
 }
 
 img {
-  border-radius: 16px 16px 0 0;
+  border-radius: 1.143rem 1.143rem 0 0;
 }
 
 .card {
   background-color: var(--neutral-white);
-  border-radius: 16px;
+  border-radius: 1.143rem;
   max-width: 343px;
 }
 
@@ -138,7 +138,7 @@ p {
   color: var(--neutral-white);
   font-weight: var(--w-bold);
   border: none;
-  border-radius: 8px;
+  border-radius: 0.571rem;
   padding: 1rem 0.5rem;
 }
 
@@ -161,7 +161,7 @@ button:hover {
   }
 
   img {
-    border-radius: 16px 0 0 16px;
+    border-radius: 1.143rem 0 0 1.143rem;
   }
 
   .content {
