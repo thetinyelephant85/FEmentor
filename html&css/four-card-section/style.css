@@ -87,3 +87,10 @@ textarea:not([rows]) {
     --w-bold: 600;
     font-size: 15px;
 }
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: var(--neutral-dark-blue);
+    background-color: var(--neutral-light-gray);
+}
+
