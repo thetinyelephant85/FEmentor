@@ -94,3 +94,47 @@ body {
     background-color: var(--neutral-light-gray);
 }
 
+
+.thin {
+  font-weight: var(--w-light);
+}
+
+main {
+  max-width: 1280px;
+  margin: 50px auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card1 card4 card3";
+  grid-gap: 20px;
+}
+
+.card {
+  border: 5px solid var(--neutral-dark-blue);
+}
+
+.card-supervisor {
+  grid-area: card1;
+  align-self: center;
+}
+
+.card-team {
+  grid-area: card2;
+}
+
+.card-karma {
+  grid-area: card3;
+  align-self: center;
+}
+
+.card-calculator {
+  grid-area: card4;
+}
