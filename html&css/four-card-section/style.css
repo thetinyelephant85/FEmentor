@@ -90,17 +90,18 @@ textarea:not([rows]) {
 }
 
 body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    color: var(--neutral-grayish-blue);
-    background-color: var(--neutral-light-gray);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: var(--neutral-grayish-blue);
+  background-color: var(--neutral-light-gray);
 }
 
 h1 {
   line-height: 1.5;
+  padding-bottom: 20px;
 }
 
 h2 {
-  
+  font-size: 20px;
 }
 
 .thin {
@@ -119,50 +120,93 @@ main {
 
 .title {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "card1 card2 card3"
-    "card1 card4 card3";
+  grid-template-rows: 1fr;
   grid-gap: 20px;
+  justify-content: center;
 }
 
 .card {
   background-color: white;
   padding: 32px;
-  border-radius: 4px;
+  border-radius: 6px;
   box-shadow: 0px 24px 38px -20px rgba(84, 158, 242, 0.3);
   display: flex;
   flex-direction: column;
-  grid-gap: 20px;
+  max-width: 300px;
+}
+
+.card h2 {
+  padding-bottom: 12px;
+}
+
+.card p {
+  padding-bottom: 32px;
+  font-size: 12px;
 }
 
 .card-supervisor {
-  grid-area: card1;
-  align-self: center;
   border-top: 4px solid var(--primary-cyan);
 }
 
 .card-team {
-  grid-area: card2;
   border-top: 4px solid var(--primary-red);
 }
 
 .card-karma {
-  grid-area: card3;
-  align-self: center;
   border-top: 4px solid var(--primary-orange);
 }
 
 .card-calculator {
-  grid-area: card4;
   border-top: 4px solid var(--primary-blue);
 }
 
 .icon {
   width: 50px;
   align-self: flex-end;
+}
+
+@media (min-width:48rem) {
+  .cards {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4";
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width:85rem) {
+ 
+  .cards {
+    grid-template-areas:
+      "card1 card2 card3"
+      "card1 card4 card3";
+    grid-gap: 20px;
+  }
+
+  .card {
+    max-width: 360px;
+  }
+  
+  .card-supervisor {
+    grid-area: card1;
+    align-self: center;
+  }
+  
+  .card-team {
+    grid-area: card2;
+  }
+  
+  .card-karma {
+    grid-area: card3;
+    align-self: center;
+  }
+  
+  .card-calculator {
+    grid-area: card4;
+  }
 }
